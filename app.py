@@ -90,8 +90,8 @@ with col7:
 
 if button:
 
-    print(item_weight,item_visibility,item_type,outlet_identifier,outlet_size,outlet_type,item_mrp,item_fat_content,outlet_establishment_year,outlet_location_type)
-    row_df = pd.DataFrame([pd.Series([item_weight,item_visibility,item_type,outlet_identifier,outlet_size,outlet_type,item_mrp,item_fat_content,outlet_establishment_year,outlet_location_type])])
+    print(item_weight,item_fat_content,item_visibility,item_type,item_mrp,outlet_identifier,outlet_establishment_year,outlet_size,outlet_location_type,outlet_type)
+    row_df = pd.DataFrame([pd.Series([item_weight,item_fat_content,item_visibility,item_type,item_mrp,outlet_identifier,outlet_establishment_year,outlet_size,outlet_location_type,outlet_type])])
     row_df_new = pd.DataFrame(scale.transform(row_df))
 
     # Model Prediction
